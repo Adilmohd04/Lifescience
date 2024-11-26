@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function Product() {
   const list = [
@@ -42,16 +43,18 @@ function Product() {
             className="flex flex-col items-center gap-3 max-w-[280px] py-4 -translate-y-[50px]"
             key={index}
           >
-            <div className="w-[80px] h-[80px] bg-white rounded-full flex justify-center items-center">
-              <img
-                className="w-[30px]"
-                src={list.src}
-                alt={list.title}
-                style={{ objectFit: 'contain' }} 
+           <div className="w-[80px] h-[80px] bg-white rounded-full flex justify-center items-center relative">
+  <Image
+    src={list.src}
+    alt={list.title}
+    width={40}  
+    height={40} 
+    objectFit="contain" 
+    loading="lazy"
+  />
+</div>
 
-                loading="lazy"
-              />
-            </div>
+
             <h1 className="text-white text-xl font-semibold">{list.title}</h1>
             <p className="text-white font-light text-center text-sm">
               {list.desc}
