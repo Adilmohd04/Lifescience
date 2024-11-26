@@ -15,10 +15,9 @@ const SmallCard: React.FC<SmallCardProps> = ({ src, title, date, className }) =>
     >
       <Image
         src={src}
-        alt="blog image"
+        alt="image"
         layout="fill"
         objectFit="cover"
-        style={{ objectFit: 'contain' }} 
         className="rounded-2xl filter brightness-50"
         loading="lazy" 
       />
