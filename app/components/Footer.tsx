@@ -5,7 +5,6 @@ const Footer = () => {
     <footer className="bg-[#17414F] text-white py-6">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-          {/* Phone Section */}
           <div className="bg-[#1B5A68] p-4 rounded-md flex items-center">
             <Image src="/phone.svg" alt="Phone Icon" width={30} height={30} />
             <div className="ml-4">
@@ -14,7 +13,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Email Section */}
           <div className="bg-[#1B5A68] p-4 rounded-md flex items-center">
             <Image src="/email.svg" alt="Email Icon" width={30} height={30} />
             <div className="ml-4">
@@ -23,7 +21,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Location Section */}
           <div className="bg-[#1B5A68] p-4 rounded-md flex items-center">
             <Image src="/location.svg" alt="Location Icon" width={30} height={30} />
             <div className="ml-4">

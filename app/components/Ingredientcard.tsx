@@ -12,17 +12,19 @@ const Ingredientcard: React.FC<IngredientcardProps> = ({ src, title, description
       <Image
         src={src}
         alt={title}
-        width={400}  // Increased width
-        height={240} // Increased height
-        className="h-60 w-[25rem] rounded-xl object-cover" // Increased size
+        width={400}  
+        style={{ objectFit: 'contain' }} 
+
+        height={240} 
+        className="h-60 w-[25rem] rounded-xl object-cover" 
       />
 
-      <div className="absolute z-10 top-6 left-6"> {/* Adjusted top and left to fit with larger card */}
-        <h2 className="text-3xl font-semibold text-[#17414F] capitalize"> {/* Increased text size */}
+      <div className="absolute z-10 top-6 left-6"> 
+        <h2 className="text-3xl font-semibold text-[#17414F] capitalize"> 
           {title}
         </h2>
 
-        <p className="text-lg text-[#727272]"> {/* Increased text size */}
+        <p className="text-lg text-[#727272]"> 
           {description}
         </p>
 

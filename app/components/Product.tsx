@@ -47,6 +47,8 @@ function Product() {
                 className="w-[30px]"
                 src={list.src}
                 alt={list.title}
+                style={{ objectFit: 'contain' }} 
+
                 loading="lazy"
               />
             </div>

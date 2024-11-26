@@ -51,8 +51,9 @@ const Essential = () => {
                 layout="intrinsic"
                 width={400}  
                 height={400} 
-                objectFit="contain"
                 loading="lazy"
+                style={{ objectFit: 'contain' }} 
+
                 className="rounded-tl-[60px] rounded-br-[60px] hidden sm:block" 
                 />
             </div>

@@ -18,7 +18,6 @@ const Ingredients = () => {
         </p>
       </div>
 
-      {/* cards */}
       <Ingredientcard
         src="/vitaminc.png"
         title="Vitamin c"
