@@ -42,26 +42,21 @@ const Essential = () => {
         </div>
 
         <div className="relative flex justify-center items-center sm:block">
-            <div className="absolute bg-[#FFE9B5] rounded-tl-[60px] rounded-br-[60px] w-32 h-32 sm:w-48 sm:h-48 md:w-72 md:h-72 lg:w-[330px] lg:h-[320px] z-0 right-4 top-12 translate-x-180 hidden sm:block" />
+            <div className="absolute bg-[#FFE9B5] rounded-tl-[60px] rounded-br-[60px] w-32 h-32 sm:w-48 sm:h-48 md:w-72 md:h-72 lg:w-[330px] lg:h-[320px] z-0 right-4 top-12 translate-x-180 hidden lg:block" />
 
             <div className="relative z-10 -mt-16">
-                <Image
+             <Image
                 src="/probiotic.svg"
                 alt="Probiotic Image"
-                layout="intrinsic"
-                width={400}  
-                height={400} 
+                width={400}
+                height={400}
                 loading="lazy"
-                style={{ objectFit: 'contain' }} 
-
-                className="rounded-tl-[60px] rounded-br-[60px] hidden sm:block" 
+                style={{ objectFit: 'contain' }}
+                className="rounded-tl-[60px] rounded-br-[60px] hidden lg:block "
                 />
+
             </div>
             </div>
-
-
-
-    
 
         <div className="flex flex-col gap-9 -mt-20 md:mt-0">
           <IconCard Icon={GiMedicines} title="Vitamins" description="Increased vitamins and minerals in your diet" />
